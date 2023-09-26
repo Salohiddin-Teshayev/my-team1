@@ -764,6 +764,7 @@ img {
 
 .article__button {
   display: inline-block;
+  text-decoration: none;
   margin-top: 75px;
   padding: 10px 32px;
   color: #012f34;
