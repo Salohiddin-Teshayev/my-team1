@@ -1,0 +1,116 @@
+.wrapper {
+    background-image: url(../images/about-hero-bg-mobile.svg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.about {
+    
+}
+.container {
+    padding: 0 24px;
+}
+.about__inner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    row-gap: 16px;
+    padding-top: 80px;
+    padding-bottom: 108px;
+}
+.about__title {
+    margin-top: 0;
+    margin-bottom: 0;
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 100%; 
+    text-align: center;
+    color: #fff;
+}
+.about__desc {
+    margin-top: 0;
+    margin-bottom: 0;
+    font-size: 14px;
+    font-weight: 600;
+    text-align: center;
+    line-height: 186.667%; 
+    color: #fff;
+}
+@include mobile-first(375px) {
+    .about__desc-wrapper {
+        max-width: 327px;
+        width: 100%;
+    }
+    .about__desc {
+        font-size: 15px;
+    }
+}
+@include mobile-first(576px) {
+    .wrapper {
+        background-image: url(../../images/about-hero-bg-tablet.svg);
+    }
+    .about__inner {
+        row-gap: 20px;
+    }
+    .about__desc-wrapper {
+        max-width: 447px;
+    }
+    .about__title {
+        font-size: 58px;
+        line-height: 87.5%;        
+    }
+}
+@include mobile-first(768px) {
+    .about__inner {
+        row-gap: 24px;
+        padding-top: 112px;
+        padding-bottom: 112px;
+    }
+    .about__desc-wrapper {
+        max-width: 447px;
+    }
+    .about__title {
+        font-size: 64px;
+        line-height: 87.5%;        
+    }
+}
+@include mobile-first(1024px) {
+    .wrapper {
+        background-image: url(../../images/about-hero-bg.svg);
+    }
+    .about__inner {
+        flex-direction: row;
+        align-items: start;
+        column-gap: 120px;
+        padding-top: 120px;
+        padding-bottom: 120px;
+    }
+    .about__desc {
+        text-align: left;
+    }
+    .about__desc-wrapper {
+        max-width: 610px;
+        font-size: 18px;
+    }
+    .about__desc-wrapper::before {
+        display: block;
+        width: 50px;
+        height: 4px;
+        margin-bottom: 40px;
+        background-color: #f67e7e;
+        content: "";
+    }
+    .about__title {
+        font-size: 64px;
+        line-height: 100px;        
+    }
+}
+@include mobile-first(1350px) {
+    .about__inner {
+        column-gap: 180px;
+    }
+    .about__desc-wrapper {
+        max-width: 730px;
+    }
+}
