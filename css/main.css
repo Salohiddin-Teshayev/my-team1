@@ -429,6 +429,7 @@ img {
   display: inline-block;
   width: 153px;
   padding: 8px 3px;
+  text-decoration: none;
   margin: 0 auto;
   margin-left: 610px;
   text-align: center;
@@ -763,6 +764,7 @@ img {
 
 .article__button {
   display: inline-block;
+  text-decoration: none;
   margin-top: 75px;
   padding: 10px 32px;
   color: #012f34;
