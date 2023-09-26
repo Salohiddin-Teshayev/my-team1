@@ -1,0 +1,189 @@
+.directors {
+    padding-top: 88px;
+    padding-bottom: 116px;
+    background-image: url(../../images/directors-bg-mobile.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.directors__title {
+    margin-top: 0;
+    margin-bottom: 48px;
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 100%;
+    text-align: center;
+    color: #fff;
+    
+}
+.directors__list {
+    display: flex;
+    flex-direction: column;
+    row-gap: 52px;
+    justify-content: center;
+    @include list-unstyled;
+}
+.directors__item {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 32px 24px 56px;
+    background-color: #012f34;
+}
+.directors__item:nth-child(6) {
+    padding: 35px 46px 63px;
+}
+.directors__img {
+    max-width: 96px;
+    width: 100%;
+    height: 96px;
+    margin-bottom: 16px;
+}
+.directors__item-title {
+    font-size: 18px;
+    line-height: 155.556%;
+    text-align: center;
+    color: #79c8c7;
+}
+.directors__author-info {
+    font-size: 13px;
+    line-height: 166.667%;
+    text-align: center;
+    color: #fff;
+}
+.directors__btn {
+    position: absolute;
+    bottom: -28px;
+    width: 56px;
+    height: 56px;
+    border-radius: 50%;
+    border: none;
+    background-image: url(../../images/directors-btn-bg.svg);
+    background-position: center;
+}
+.directors__author-text {
+    display: block;
+    margin: 0;
+    margin-top: 8px;
+    margin-bottom: 24px;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 166.667%;
+    text-align: center;
+    color: #fff;
+}
+.directors__link-wrapper {
+    display: flex;
+    column-gap: 20px;
+    
+}
+.directors__link:first-child {
+    display: block;
+    width: 20px;
+    height: 20px;
+    background-image: url(../../images/directorstwitter.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.directors__link:last-child {
+    display: block;
+    width: 20px;
+    height: 20px;
+    background-image: url(../../images/directors-ln.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.directors__item--tablet {
+    display: none;
+}
+@include mobile-first(375px) {
+    .directors__author-info, .directors__author-text {
+        font-size: 15px;
+    }
+    .directors__list {
+        align-items: center;
+    }
+    .directors__item {
+        max-width: 327px;
+        width: 100%;
+    }
+    .directors__title {
+        font-size: 32px;
+    }
+}
+@include mobile-first(768px) {
+    .directors {
+        padding-top: 100px;
+        padding-bottom: 128px;
+        background-image: url(../../images/diretors-bg-tablrt.svg);
+    }
+    .directors__author-info, .directors__author-text {
+        font-size: 15px;
+    }
+    .directors__list {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: start;
+        column-gap: 11px;
+        row-gap: 76px;
+    }
+    .directors__item {
+        max-width: 281px;
+        width: 100%;
+    }
+    .directors__item:nth-child(7) {
+        padding: 35px 24px 63px;
+    }
+    .directors__item:nth-child(5) {
+        display: none;
+    }
+    .directors__item:nth-child(6) {
+        display: none;
+    }
+    .directors__item:nth-child(6) { 
+        padding: 35px 24px 63px;
+    }
+    .directors__item--tablet { 
+        display: flex;
+    }
+    
+}
+
+@include mobile-first(950px) {
+    .directors {
+        padding-top: 140px;
+        padding-bottom: 168px;
+    }
+    .directors__title {
+        font-size: 48px;
+        margin-bottom: 64px;
+    }
+    .directors__list {
+        column-gap: 30px;
+    }
+   
+    .directors__item:nth-child(5) {
+        display: flex;
+    }
+    .directors__item:nth-child(6) {
+        display: flex;
+    }
+    .directors__item:nth-child(7), .directors__item:nth-child(8) {
+        display: none;
+    }
+}
+@include mobile-first(1150px) {
+   .container {
+    padding: 0 20px;
+   }
+   .directors {
+    background-image: url(../../images/directors-bg-desktop.svg);
+   }
+   .directors__item {
+        max-width: 350px;
+    }
+}

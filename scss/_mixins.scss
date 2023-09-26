@@ -1,0 +1,62 @@
+@mixin list-unstyled {
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-left: 0;
+    list-style: none;
+}
+@mixin anchor-style($pt,$pb) {
+    display: block;
+    padding-top: $pt;
+    padding-bottom: $pb;
+    text-decoration-line: none;
+    text-align: center;
+}
+@mixin psevdo-element($position,$top,$left) {
+    position: $position;
+    top: $top;
+    left: $left;
+    content: " ";
+}
+@mixin sticky-footer {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    margin: 0; 
+}
+@mixin mobile-first($min) {
+    @media only screen and (min-width:$min) {
+        @content;
+    }
+} 
+@mixin fraunces-family {
+    font-family: Fraunces,serif;
+    font-weight: 900;
+} 
+@mixin flex-row($row) {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    row-gap: $row;
+}
+@mixin flex-column($column) {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    column-gap: $column;
+}
+@mixin flex-d-row($justify,$align,$row) {
+    display: flex;
+    flex-direction: row;
+    justify-content: $justify;
+    align-items: $align;
+    row-gap: $row;
+}
+@mixin flex-d-column($justify,$align,$column) {
+    display: flex;
+    flex-direction: row;
+    justify-content: $justify;
+    align-items: $align;
+    column-gap: $column;
+}
