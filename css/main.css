@@ -429,6 +429,7 @@ img {
   display: inline-block;
   width: 153px;
   padding: 8px 3px;
+  text-decoration: none;
   margin: 0 auto;
   margin-left: 610px;
   text-align: center;
