@@ -1,0 +1,25 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    background-color: #f6f7f9;
+    height: 100%;
+    margin: 0;
+
+}
+
+.site-main {
+    flex-grow: 1;
+}
+
+img {
+    display: block;
+    height: auto;
+}
